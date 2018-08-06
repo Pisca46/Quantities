@@ -1,0 +1,6 @@
+ channel filtered sampleRate  signal  
+                        /sec   max    
+       1    ✓            512    0.123 
+       2                 256   21.12  
+       3    ✓            512   21     
+       4                 256 5421     

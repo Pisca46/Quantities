@@ -1,0 +1,26 @@
+Package: quantities
+Type: Package
+Title: Quantities and print support
+Version: 0.9.1
+Author: person ("Jan", "Vis", email = "jan@visconsultancy.eu",
+   role = c("aut", "cre"))
+Maintainer: Jan Vis <jan@visconsultancy.eu>
+Description: Lineair quantities for numerics: conversions, operations and print support
+    More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Collate:
+    'numeric.R'
+    'misc.R'
+    'quantities.R'
+    'quantityDefinitions.R'
+    'qMassCA.R'
+    'qLengthCA.R'
+    'qDurationCA.R'
+    'qPrefix.R'
+    'addPackageQdefs.R'
+    'printSupport.R'
+RoxygenNote: 6.0.1
+Suggests: testthat

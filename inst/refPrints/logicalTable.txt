@@ -1,0 +1,9 @@
+ CTrue CFalse CBot CDef 
+   v     ✓     v    ✓   
+   v     ✓     v    ✓   
+         No    x        
+         No    x        
+   v     ✓     v    ✓   
+  NA     NA   n.a.  NA  
+   v     ✓     v    ✓   
+... and 1 more

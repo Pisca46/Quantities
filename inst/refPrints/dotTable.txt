@@ -1,0 +1,6 @@
+     a     abcdefghij abcdefghijk  hdr2  hdr3a  hdr4  hdr5  large hdr6 large hdr7 large hdr8 
+   unit        u2                                                                            
+ 123.567    123.567     123.567   1.3456   1.3 1.3456 1.345     1.3456     1.3456     1.3456 
+  23.56789   23.56789    23.56789   -            -Inf less      1          1          1      
+   3          3           3         -            much Inf      NA       n.a.         NA      
+  23         23          23       0.5      0.5 0.5    0.5       0.5        0.5        0.5    

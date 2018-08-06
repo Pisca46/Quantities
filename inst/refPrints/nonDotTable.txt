@@ -1,0 +1,6 @@
+ x   xyz xyzz   x xyz xyzz  x  xyz xyzz 
+ ll  ll  ll    rr  rr   rr cc  cc   cc  
+                                        
+ lll lll lll  rrr rrr  rrr ccc ccc ccc  
+                                        
+ l   l   l      r   r    r  c   c   c   

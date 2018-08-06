@@ -1,0 +1,5 @@
+ a                a                     a                      a short              
+ splitted         splitted          splitted            splitted                    
+ default alligned left alligned centered alligned rigth alligned                    
+ caption          caption            caption             caption                    
+ default          left               centre                right long default entry 
