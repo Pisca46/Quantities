@@ -17,7 +17,9 @@ getEpsDistance(x, y)
 coerceNearToInt(x, maxEpsDistance)
 }
 \arguments{
-\item{x, }{y numeric vectors}
+\item{x}{numeric vector}
+
+\item{y}{numeric vector}
 
 \item{maxEpsDistance}{an integer specifying the number of successive numerical values considerd to be nearby.}
 }
@@ -37,4 +39,3 @@ More precise, the spacing between x and the successive numeric value is returned
 \references{
 https://en.wikipedia.org/wiki/Machine_epsilon
 }
-\keyword{internal}

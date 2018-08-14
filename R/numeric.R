@@ -20,6 +20,7 @@
 # History   :
 #     Oct17 - Created
 #     Dec17 - Version 0.1 (Dec 20)
+#     Aug18 - getNumericUpperSpacing, getNumericLowerSpacing, getEpsDistance, and coerceNearToInt exported
 # ------------------------------------------------------------------------------
 #
 # -----------------------------------------------------------------------------
@@ -27,7 +28,8 @@
 #                           getSpacing and epsDistance
 # -----------------------------------------------------------------------------
 #' get the spacing, distance and near values for successive numeric values
-#' @param x, y numeric vectors
+#' @param x numeric vector
+#' @param y numeric vector
 #' @param maxEpsDistance an integer specifying the number of successive numerical values considerd to be nearby.
 #' @return the space between two successive numeric values
 #' @details getNumericUpperSpacing and getNumericLowerSpacing return the distance to
@@ -45,7 +47,7 @@
 # #' @examples
 # #' getNumericUpperSpacing (1) == .Machine$double.eps        # returns TRUE
 # #' getNumericUpperSpacing (2^52)                            # retruns 1
-#' @keywords internal
+#' @export
 getNumericUpperSpacing <- function (x) {
     if (!is.numeric(x)) stop ("x must be numeric")
     exp <- floor (log2 (abs (x)))
@@ -57,7 +59,7 @@ getNumericUpperSpacing <- function (x) {
 # #' @examples
 # #' getNumericLowerSpacing(1) == .Machine$double.eps / 2     # returns TRUE
 # #' getNumericLowerSpacing (2^53)                            # retruns 1
-#' @keywords internal
+#' @export
 getNumericLowerSpacing <- function (x) {
     if (!is.numeric(x)) stop ("x must be numeric")
     lg2 <- log2 (abs(x))
@@ -73,7 +75,7 @@ getNumericLowerSpacing <- function (x) {
 # #' getEpsDistance (2,4) == 2^52
 # #' getEpsDistance (4,8) == 2^52
 # #' getEpsDistance (2.5, 5) == 2^52
-#' @keywords internal
+#' @export
 getEpsDistance <- function (x, y) {
     if (!is.numeric(x)) stop ("x must be numeric")
     if (!is.numeric(y)) stop ("y must be numeric")
@@ -112,7 +114,7 @@ getEpsDistance <- function (x, y) {
 # #' eps <- 2^-52
 # #' x <- c (1-3*eps/2, 1-2*eps/2, 1-eps/2, 1, 1+eps, 1+2*eps, 1+3*eps)
 # #' coerceNearToInt (x, 1)                   # returns  c(NA, NA,  1, 1,  1, NA, NA)
-#' @keywords internal
+#' @export
 coerceNearToInt <- function (x, maxEpsDistance) {
     n           <- round (x)
     delta       <- getEpsDistance (x, n)
